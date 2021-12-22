@@ -4,6 +4,21 @@
   height: 100px;
   width: 100px;
 }
+
+.checker-piece {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px;
+}
+.checker-piece:hover {
+  cursor: grab;
+}
+.checker-piece:active {
+  cursor: grabbing;
+}
+
 .black-tile {
   background-color: #c6c6c6;
 }

@@ -5,8 +5,13 @@ const Tile = ({ number, image }) => {
     return (
         <div>
             {
-                number % 2 === 0 ? <div className="tile black-tile">{<img className="piece-image" src={image} alt=""></img>}</div>
-                    : <div className="tile white-tile">{<img className="piece-image" src={image} alt=""></img>}</div>
+                number % 2 === 0 ?
+                    <div className="tile black-tile">
+                        {image && <div style={{ backgroundImage: `url(${image})` }} className="checker-piece"></div>}
+                    </div>
+                    : <div className="tile white-tile">
+                        {image && <div style={{ backgroundImage: `url(${image})` }} className="checker-piece"></div>}
+                    </div>
 
             }
 
